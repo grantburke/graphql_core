@@ -1,0 +1,12 @@
+/Users/Grant/Desktop/graphql_core/graphql_core.Data/bin/Debug/netcoreapp3.1/graphql_core.Data.deps.json
+/Users/Grant/Desktop/graphql_core/graphql_core.Data/bin/Debug/netcoreapp3.1/graphql_core.Data.runtimeconfig.json
+/Users/Grant/Desktop/graphql_core/graphql_core.Data/bin/Debug/netcoreapp3.1/graphql_core.Data.runtimeconfig.dev.json
+/Users/Grant/Desktop/graphql_core/graphql_core.Data/bin/Debug/netcoreapp3.1/graphql_core.Data.dll
+/Users/Grant/Desktop/graphql_core/graphql_core.Data/bin/Debug/netcoreapp3.1/graphql_core.Data.pdb
+/Users/Grant/Desktop/graphql_core/graphql_core.Data/obj/Debug/netcoreapp3.1/graphql_core.Data.csprojAssemblyReference.cache
+/Users/Grant/Desktop/graphql_core/graphql_core.Data/obj/Debug/netcoreapp3.1/graphql_core.Data.csproj.CoreCompileInputs.cache
+/Users/Grant/Desktop/graphql_core/graphql_core.Data/obj/Debug/netcoreapp3.1/graphql_core.Data.AssemblyInfoInputs.cache
+/Users/Grant/Desktop/graphql_core/graphql_core.Data/obj/Debug/netcoreapp3.1/graphql_core.Data.AssemblyInfo.cs
+/Users/Grant/Desktop/graphql_core/graphql_core.Data/obj/Debug/netcoreapp3.1/graphql_core.Data.dll
+/Users/Grant/Desktop/graphql_core/graphql_core.Data/obj/Debug/netcoreapp3.1/graphql_core.Data.pdb
+/Users/Grant/Desktop/graphql_core/graphql_core.Data/obj/Debug/netcoreapp3.1/graphql_core.Data.genruntimeconfig.cache
