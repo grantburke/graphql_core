@@ -10,8 +10,8 @@ namespace graphql_core.Service
     {
         IEnumerable<T> GetAll();
         T GetById(int id);
-        void Create(T entity);
-        void Update(T entity);
+        T Create(T entity);
+        T Update(T entity);
         void Delete(int id);
     }
 
@@ -35,16 +35,18 @@ namespace graphql_core.Service
                 .FirstOrDefault(f => f.Id == id);
         }
 
-        public void Create(T entity)
+        public T Create(T entity)
         {
-            _db.Set<T>().Add(entity);
+            var newEntity = _db.Set<T>().Add(entity);
             _db.SaveChanges();
+            return newEntity.Entity;
         }
 
-        public void Update(T entity)
+        public T Update(T entity)
         {
-            _db.Set<T>().Update(entity);
+            var updatedEntity = _db.Set<T>().Update(entity);
             _db.SaveChanges();
+            return updatedEntity.Entity;
         }
 
         public void Delete(int id)

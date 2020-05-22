@@ -1,5 +1,6 @@
 ﻿using GraphQL;
 using GraphQL.Types;
+using graphql_core.Mutations;
 using graphql_core.Queries;
 
 namespace graphql_core.Schema
@@ -9,6 +10,7 @@ namespace graphql_core.Schema
         public QuotesSchema(IDependencyResolver resolver) : base(resolver)
         {
             Query = resolver.Resolve<QuotesQuery>();
+            Mutation = resolver.Resolve<QuotesMutation>();
         }
     }
 }
