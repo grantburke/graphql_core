@@ -14,6 +14,7 @@ namespace graphql_core.Types
             Field(f => f.Phrase);
             Field(f => f.Emoji);
             Field(f => f.EmployeeId);
+            Field(f => f.Employee, type: typeof(EmployeeType));
         }
     }
 }

@@ -1,14 +1,3 @@
-C:/Users/grant.burke/RiderProjects/graphql_core/graphql_core.Service/bin/Debug/netcoreapp3.1/graphql_core.Service.deps.json
-C:/Users/grant.burke/RiderProjects/graphql_core/graphql_core.Service/bin/Debug/netcoreapp3.1/graphql_core.Service.dll
-C:/Users/grant.burke/RiderProjects/graphql_core/graphql_core.Service/bin/Debug/netcoreapp3.1/graphql_core.Service.pdb
-C:/Users/grant.burke/RiderProjects/graphql_core/graphql_core.Service/bin/Debug/netcoreapp3.1/graphql_core.Data.dll
-C:/Users/grant.burke/RiderProjects/graphql_core/graphql_core.Service/bin/Debug/netcoreapp3.1/graphql_core.Data.pdb
-C:/Users/grant.burke/RiderProjects/graphql_core/graphql_core.Service/obj/Debug/netcoreapp3.1/graphql_core.Service.csprojAssemblyReference.cache
-C:/Users/grant.burke/RiderProjects/graphql_core/graphql_core.Service/obj/Debug/netcoreapp3.1/graphql_core.Service.AssemblyInfoInputs.cache
-C:/Users/grant.burke/RiderProjects/graphql_core/graphql_core.Service/obj/Debug/netcoreapp3.1/graphql_core.Service.AssemblyInfo.cs
-C:/Users/grant.burke/RiderProjects/graphql_core/graphql_core.Service/obj/Debug/netcoreapp3.1/graphql_core.Service.csproj.CopyComplete
-C:/Users/grant.burke/RiderProjects/graphql_core/graphql_core.Service/obj/Debug/netcoreapp3.1/graphql_core.Service.dll
-C:/Users/grant.burke/RiderProjects/graphql_core/graphql_core.Service/obj/Debug/netcoreapp3.1/graphql_core.Service.pdb
 /Users/Grant/Desktop/graphql_core/graphql_core.Service/obj/Debug/netcoreapp3.1/graphql_core.Service.dll
 /Users/Grant/Desktop/graphql_core/graphql_core.Service/obj/Debug/netcoreapp3.1/graphql_core.Service.pdb
 /Users/Grant/Desktop/graphql_core/graphql_core.Service/bin/Debug/netcoreapp3.1/graphql_core.Service.deps.json

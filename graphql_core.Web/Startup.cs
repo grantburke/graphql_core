@@ -54,6 +54,7 @@ namespace graphql_core
             services.AddScoped<QuoteType>();
             services.AddScoped<QuotesSchema>();
             services.AddScoped<IQuoteService, QuoteService>();
+            services.AddScoped<IEmployeeService, EmployeeService>();
             services.AddGraphQL()
                 .AddGraphTypes(ServiceLifetime.Scoped)
                 .AddDataLoader();
