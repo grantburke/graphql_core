@@ -63,19 +63,18 @@ namespace graphql_core
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                Seed.InitializeDate(app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope().ServiceProvider);
-            }
-
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
             app.UseGraphQL<QuotesSchema>();
-            app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
-            app.UseGraphiQLServer(new GraphiQLOptions());
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+                Seed.InitializeDate(app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope().ServiceProvider);
+                app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
+                app.UseGraphiQLServer(new GraphiQLOptions());
+            }
         }
     }
 }

@@ -9,7 +9,7 @@ namespace graphql_core.Data
         public virtual DbSet<Employee> Employees { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-                => options.UseSqlite("Data Source=quotes.db");
+                => options.UseSqlite("Data Source=./../graphql_core.Data/quotes.db");
 
     }
 }
