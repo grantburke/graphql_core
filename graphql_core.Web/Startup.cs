@@ -18,6 +18,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using graphql_core.Types;
+using graphql_core.Queries;
 
 namespace graphql_core
 {
@@ -44,14 +46,16 @@ namespace graphql_core
             {
                 options.AllowSynchronousIO = true;
             });
-            
-            services.AddDbContext<TodoContext>();
-            services.AddTransient<ITodoService, TodoService>();
-            
-            services.AddSingleton<IDependencyResolver>(c => new FuncDependencyResolver(c.GetRequiredService));
-            services.AddSingleton<MySchema>();
+
+            services.AddDbContext<QuotesContext>();
+
+            services.AddScoped<IDependencyResolver>(c => new FuncDependencyResolver(c.GetRequiredService));
+            services.AddScoped<QuotesQuery>();
+            services.AddScoped<QuoteType>();
+            services.AddScoped<QuotesSchema>();
+            services.AddScoped<IQuoteService, QuoteService>();
             services.AddGraphQL()
-                .AddGraphTypes()
+                .AddGraphTypes(ServiceLifetime.Scoped)
                 .AddDataLoader();
         }
 
@@ -61,13 +65,14 @@ namespace graphql_core
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                Seed.InitializeDate(app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope().ServiceProvider);
             }
 
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
-            app.UseGraphQL<MySchema>();
+            app.UseGraphQL<QuotesSchema>();
             app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
             app.UseGraphiQLServer(new GraphiQLOptions());
         }
